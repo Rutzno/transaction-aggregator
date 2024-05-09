@@ -54,7 +54,6 @@ public class AppService {
         }
         transactions.sort(Comparator.comparing(Transaction::getTimestamp).reversed()); // sort them by the transaction timestamp in the descending order
         return ResponseEntity.ok(transactions);
-//        return transactions;
     }
 
     /**
