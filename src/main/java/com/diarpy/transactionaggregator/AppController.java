@@ -21,12 +21,6 @@ import java.util.List;
 @RestController
 public class AppController {
 
-    /*@GetMapping("/aggregate")
-     public String getPing() {
-         RestTemplate restTemplate = new RestTemplate();
-         String apiUrl = "http://localhost:8889/ping";
-         return restTemplate.getForObject(apiUrl, String.class);
-     }*/
     @GetMapping("/aggregate")
     public List<Transaction> getPing(@RequestParam String account) {
         List<Transaction> transactions = new ArrayList<>();
