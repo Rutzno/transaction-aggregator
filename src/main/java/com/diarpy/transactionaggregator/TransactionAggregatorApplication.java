@@ -2,13 +2,15 @@ package com.diarpy.transactionaggregator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @author Mack_TB
  * @since 13/04/2024
- * @version 1.0.1
+ * @version 1.0.4
  */
 
+@EnableCaching
 @SpringBootApplication
 public class TransactionAggregatorApplication {
 
