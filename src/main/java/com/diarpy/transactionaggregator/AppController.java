@@ -28,4 +28,5 @@ public class AppController {
     public ResponseEntity<List<Transaction>> fetchData(@RequestParam String account) {
         return appService.fetchData(account);
     }
+
 }
